@@ -1,0 +1,172 @@
+---
+layout: page
+title: "ALBUMS"
+description: "archive"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+images:
+ - image_path: /gallery/albums/alb01.jpg
+   gallery-folder: /gallery/gallery01/
+   gallery-name: gallery1
+   gallery-date: July 2015
+ - image_path: /gallery/albums/alb02.jpg
+   gallery-folder: /gallery/gallery02/
+   gallery-name: gallery2
+   gallery-date: June 2015
+ - image_path: /gallery/albums/alb03.jpg
+   gallery-folder: /gallery/gallery03/
+   gallery-name: gallery3
+   gallery-date: May 2015
+ - image_path: /gallery/albums/alb04.jpg
+   gallery-folder: /gallery/gallery04/
+   gallery-name: gallery4
+   gallery-date: April 2015
+ - image_path: /gallery/albums/alb05.jpg
+   gallery-folder: /gallery/gallery05/
+   gallery-name: gallery5
+   gallery-date: March 2015
+ - image_path: /gallery/albums/alb06.jpg
+   gallery-folder: /gallery/gallery06/
+   gallery-name: gallery6
+   gallery-date: February 2015
+ - image_path: /gallery/albums/alb07.jpg
+   gallery-folder: /gallery/gallery07/
+   gallery-name: gallery7
+   gallery-date: January 2015
+ - image_path: /gallery/albums/alb08.jpg
+   gallery-folder: /gallery/gallery08/
+   gallery-name: gallery8
+   gallery-date: December 2014
+ - image_path: /gallery/albums/alb09.jpg
+   gallery-folder: /gallery/gallery09/
+   gallery-name: gallery9
+   gallery-date: November 2014
+ - image_path: /gallery/albums/alb10.jpg
+   gallery-folder: /gallery/gallery10/
+   gallery-name: gallery10
+   gallery-date: July 2015
+ - image_path: /gallery/albums/alb11.jpg
+   gallery-folder: /gallery/gallery11/
+   gallery-name: gallery11
+   gallery-date: June 2015
+ - image_path: /gallery/albums/alb12.jpg
+   gallery-folder: /gallery/gallery12/
+   gallery-name: gallery12
+   gallery-date: May 2015
+ - image_path: /gallery/albums/alb13.jpg
+   gallery-folder: /gallery/gallery13/
+   gallery-name: gallery13
+   gallery-date: April 2015
+ - image_path: /gallery/albums/alb14.jpg
+   gallery-folder: /gallery/gallery14/
+   gallery-name: gallery14
+   gallery-date: March 2015
+ - image_path: /gallery/albums/alb15.jpg
+   gallery-folder: /gallery/gallery15/
+   gallery-name: gallery15
+   gallery-date: February 2015
+ - image_path: /gallery/albums/alb16.jpg
+   gallery-folder: /gallery/gallery16/
+   gallery-name: gallery16
+   gallery-date: January 2015
+ - image_path: /gallery/albums/alb17.jpg
+   gallery-folder: /gallery/gallery17/
+   gallery-name: gallery17
+   gallery-date: December 2014
+ - image_path: /gallery/albums/alb18.jpg
+   gallery-folder: /gallery/gallery18/
+   gallery-name: gallery18
+   gallery-date: November 2014
+ - image_path: /gallery/albums/alb19.jpg
+   gallery-folder: /gallery/gallery19/
+   gallery-name: gallery19
+   gallery-date: July 2015
+ - image_path: /gallery/albums/alb20.jpg
+   gallery-folder: /gallery/gallery20/
+   gallery-name: gallery20
+   gallery-date: June 2015
+ - image_path: /gallery/albums/alb21.jpg
+   gallery-folder: /gallery/gallery21/
+   gallery-name: gallery21
+   gallery-date: May 2015
+ - image_path: /gallery/albums/alb22.jpg
+   gallery-folder: /gallery/gallery22/
+   gallery-name: gallery22
+   gallery-date: April 2015
+ - image_path: /gallery/albums/alb23.jpg
+   gallery-folder: /gallery/gallery23/
+   gallery-name: gallery23
+   gallery-date: March 2015
+ - image_path: /gallery/albums/alb24.jpg
+   gallery-folder: /gallery/gallery24/
+   gallery-name: gallery24
+   gallery-date: February 2015
+ - image_path: /gallery/albums/alb25.jpg
+   gallery-folder: /gallery/gallery25/
+   gallery-name: gallery25
+   gallery-date: January 2015
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+</head>
+
+
+    <body class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	
+			<h2>{{page.title}}</h2>
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for image in page.images %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<br>
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body></html>
