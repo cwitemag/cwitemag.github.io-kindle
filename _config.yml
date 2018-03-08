@@ -33,7 +33,7 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "/photorama/gallery/"  
+  - GALLERY: "/gallery/"  
   - E-Magazine: "http://www.cwitemagazine.tk"
 
 # All translation keys
